@@ -1,0 +1,47 @@
+
+/* General stuff about the body and text */
+body {
+	background-color: black ;
+	font-size: 14px ;
+	color: white ;
+}
+p {
+	font-family:  Helvetica, verdana ;
+	font-size: 0.9em ;
+	font-weight: lighter ;
+}
+
+p.refText {
+	font-family: Arial, verdana ;
+	font-size: 0.9em ;
+	font-weight: lighter;
+	padding: 8px 5px;
+	margin: 0;
+	width: 600px ;
+}
+
+/* unvisited link */
+p.refText a:link {
+    color: yellow;
+}
+
+/* visited link */
+p.refText a:visited {
+    color: red;
+}
+
+/* mouse over link */
+p.refText a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+p.refText a:active {
+    color: blue;
+}
+
+h1.refHeader {
+	font-family: Arial ;
+	font-size: 1.5em ;
+	font-weight: heavy ;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Joakim Kjellsson - AOPP, Physics, University of Oxford</title>
+  <link rel="stylesheet" href="style-joakim-new.css" />
+  <link rel="author" href="mailto:joakim.kjellsson@physics.ox.ac.uk" />
+</head>
+
+<body>
+
+<h2 class="jtkHeader">Scripts</h2>
+
+<p class="jtkText">
+NOTE: This page is very much in construction. The plan is to upload a few of the scripts I've 
+used in some papers. 
+It is nowhere near a complete list. 
+Bear in mind that most of them have no documentation and very few comments. 
+I'm happy share scripts and a bit of help upon request. 
+</p>
+</br>
+
+<HR class='hLine'>
+
+<h2 class="jtkHeader">Stream functions in various coordinates</h2>
+
+<p class="jtkText">This is the code that was used for the 
+<a href="http://journals.ametsoc.org/doi/abs/10.1175/JAS-D-13-0173.1" target="_blank">Kjellsson et al. (2014)</a> and 
+<a href="http://link.springer.com/article/10.1007/s00382-014-2337-8" target="_blank">Kjellsson (2015)</a> papers. 
+It is written in Fortran 90 with OpenMP shared-memory parallelisation and netCDF4 input/outputs. 
+It also uses CDO to convert or interpolate data where necessary. 
+It reads in ERA-Interim and CMIP5 atmosphere data to calculate stream functions in 
+a wide range of different coordinate systems. </p>
+
+<img src="images/era_moc.png">
+
+<a href="scripts/hydrocode.tar.gz">Source code (.tar.gz)</a>
+
+<HR class='hLine'>
+
+<h2 class="jtkHeader">Barotropic, linear shallow water model with MPI</h2>
+
+<p class="jtkText">This code was written by me and Abubakr Salih for a project on high-performance computing. 
+We used it to test scalability and performance on various supercomputers and compilers. 
+netCDF module was written by Laurent Brodeau. </p>
+
+<img src="images/hpc_output.png">
+
+<a href="scripts/sw_mpi.tar.gz">Source code (.tar.gz)</a>
+
+<HR class='hLine'>
+
+<h2 class="jtkHeader">Plotting Antarctic sea ice</h2>
+
+<p class="jtkText">Coming soon...</p>
+
+<HR class='hLine'>
+
+<h2 class="jtkHeader">Spectral fluxes of kinetic energy in global NEMO simulations</h2>
+
+<p class="jtkText">Coming soon...</p>
+
+<HR class='hLine'>
+
+</body>
+</html>
