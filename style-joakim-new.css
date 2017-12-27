@@ -11,6 +11,11 @@ p {
 	font-weight: lighter ;
 }
 
+a {
+	font-family: Arial;
+	color: yellow ;
+}
+
 /* Settings for the navigation bar */
 
 ul.nav {
