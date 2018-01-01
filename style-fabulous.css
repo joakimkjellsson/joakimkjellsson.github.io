@@ -1,0 +1,340 @@
+/* I set the width of the page in absolute pixels, rather than percent of the view */
+
+/* margin: 0 eliminates white space above and below first and last elements */
+/* text-align: center makes sure all divs are centered on the page */
+/* font-size: 0 removes white space between divs */
+/* font-family: Arial sets a common font that should exist on all computers */
+body { 
+	margin: 0;
+	text-align: center;
+	font-size: 0;
+	font-family: Arial;
+	/* background properties */
+	background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+}
+
+/* Horizontal line */
+HR.jtkSideBar {
+	width: 99%;
+	border-color: rgb(80,80,80);
+	background-color: rgb(80,80,80);
+	color: rgb(80,80,80);
+	border: none;
+	height: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Horizontal line in research.html */
+HR.jtkResearch {
+	width: 90%;
+	border-color: rgb(90,90,90);
+	background-color: rgb(90,90,90);
+	color: rgb(90,90,90);
+	border: none;
+	height: 2px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* The layout of the page is a set of divs (header, tagLine, content, footer) */
+/* which are all inline-blocks so that they respect height and width settings */
+/* and dont have any white space between them (which blocks do). */
+/* The div content is however a display: flex, so that its children always have */
+/* the same height. */
+/* The content div has two sub divs (mainContent, sideBar) which are also */
+/* inline-blocks but with float: left and float: right. */
+
+/* Header */
+
+#headerAndTagLine {
+	width: 800px;
+	height: auto;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px solid;
+    /*border-image: url("images/border.png") 100% stretch; */
+	background-color: rgb(35,35,35);
+	/*background-image: url("images/head_bg.JPG"); */
+	background-size: contain;
+}
+
+#header {
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	font-size: 20px;
+}
+
+#tagLine {
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	font-size: 12px;
+}
+
+#topContentSeparatorLine1 {
+	width: 800px;
+	height: 0.8px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(85,85,85);
+	display: inline-block;
+}
+
+#topContentSeparator {
+	width: 800px;
+	height: 6.4px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(55,55,55);
+	display: inline-block;
+}
+
+#topContentSeparatorLine2 {
+	width: 800px;
+	height: 0.8px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(85,85,85);
+	display: inline-block;
+}
+
+/* display: flex makes both the children, i.e. mainContent and sideBar, have same height even if the height of one changes */
+#content {
+	width: 800px;
+	height: auto;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: blue;
+	display: flex;
+	font-size: 12px;
+}
+
+#mainContent {
+	width: 78%;
+	height: auto;
+	float: left;
+	background-color: rgb(70,70,70);
+	display: inline-block;
+	font-size: 12px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#sideBar {
+	width: 21%;
+	height: auto;
+	float: right;
+	background-color: rgb(55,55,55);
+	display: inline-block;
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#sideSeparatorLine1 {
+	width: 0.1%;
+	height: auto;
+	float: right;
+	background-color: rgb(85,85,85);
+	display: inline-block;
+}
+
+#sideSeparator {
+	width: 0.8%;
+	height: auto;
+	float: right;
+	background-color: rgb(55,55,55);
+	display: inline-block;
+}
+
+#sideSeparatorLine2 {
+	width: 0.1%;
+	height: auto;
+	float: right;
+	background-color: rgb(85,85,85);
+	display: inline-block;
+}
+
+#footer {
+	width: 800px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(35,35,35);
+	display: inline-block;
+	font-size: 12px;
+}
+
+/* Style for my name */
+p.jtkName {
+	font-size: 2em;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: white;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+}
+
+p.jtkTagLine {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: white;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+}
+
+/* jtkText is the go-to behaviour for text (headers, lists, p, etc) */
+
+a.jtkText {
+	color: white;
+}
+
+h2.jtkText {
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+}
+
+h3.jtkText {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+p.jtkText {
+	font-size: 1.2em;
+	text-align: left;
+	padding-left: 0em;
+	padding-right: 0em;
+	color: white;
+}
+
+ul.jtkText {
+	justify-content: left;
+	list-style-type: circle;
+	color: white;
+}
+
+li.jtkText {
+	padding-left: 0em;
+	padding-right: 0em;
+	text-indent: 0;
+}
+
+/* Style for sideBar text and links */
+a.jtkSideNav{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic;
+	text-transform: uppercase;
+	color: white;
+}
+
+img.jtkPicture{
+    width: 83%;
+	height: auto; 
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-radius: 70px;
+}
+
+li.jtkSideNav{
+	font-size: 1em;
+	text-indent: 0;
+	font-weight: normal;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	letter-spacing: 0.1em;
+}
+
+ul.jtkSideBar {
+	list-style-type: none;
+	text-indent: 0;
+	padding-left: 0;
+	justify-content: center;
+}
+
+a.jtkSideBar {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic;
+	color: white;
+	line-height: 2em;
+	letter-spacing: 0.1em;
+}
+
+img.jtkSocialLink {
+	width: auto;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h2.jtkAbout {
+	font-variant: small-caps;
+	color: white;
+	font-weight: 100;
+	letter-spacing: 0.1em;
+}
+
+p.jtkAbout{
+	text-align: center;
+	color: white;
+	letter-spacing: 0.1em;
+}
+
+/* Styles for publications list */
+h2.jtkPubs {
+	font-size: 1.5em;
+	color: white;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+p.jtkPubs {
+	font-size: 1.2em;
+	color: white;
+	text-align: justify;
+}
+
+/* Styles for contacts */
+p.jtkContact {
+	text-align: left;
+	font-size: 1.2em;
+	color: white;
+	text-decoration: underline;
+}
+
+/* Style for footer */
+p.jtkFooter {
+	font-size: 0.9em;
+	text-align: center;
+	color: white;
+}
+
+a.jtkFooter {
+	color: white;
+}

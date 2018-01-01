@@ -1,103 +1,186 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Joakim Kjellsson - AOPP, Physics, University of Oxford</title>
-   <link rel="stylesheet" href="style-joakim-new.css" />
+   <title>Joakim Kjellsson - Climate scientist</title>
+   <link rel="stylesheet" href="style-fabulous.css" />
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+   </script>
 </head>
-<body>
-
-<div id="leftContent">
-
-<img class="headTop" src="images/head2.jpg">
-
-<HR class='hLine'>
-
-<div id="jtkNavContainer">
-<ul>
-<li><a class="jtkNav" href="pubs.html">Publications</a></li>
-<li><a class="jtkNav" href="animations.html">Animations</a></li>
-<li><a class="jtkNav" href="scripts.html">Scripts</a></li>
-</ul>
-</div>
-
-<HR class='hLine'>
-<div id="about">
-<h2 class="jtkHeader">About</h2>
-<img class="sideBarPicture" src="images/joakim_kjellsson2_lr.jpg">
-<p class="jtkText">Joakim Kjellsson<br/>
-Post doc<br/>
-GEOMAR Helmholtz Zentrum für Ozeanforschung Kiel<br/>
-Kiel, Germany<br/>
-</p>
-<ul class='jtkList'>
-<li class='jtkList'>
-<a href="papers/cv_kjellsson.pdf" target="_blank">Curriculum Vitae (pdf)</a>
-</li>
-</ul>
-<h3 class="jtkHeader">Research interests:</h3>
-<ul class='jtkList'>
-<li class='jtkList'>High-resolution climate modelling</li>
-<li class='jtkList'>Eddy-mean flow interactions</li>
-<li class='jtkList'>Southern Ocean and Antarctic sea ice</li>
-<li class='jtkList'>Lagrangian particle tracking with the TRACMASS code</li>
-<li class='jtkList'>The atmospheric and oceanic circulation in thermodynamic coordinates</li>
-</ul>
-</p>
-
-</div>
-<HR class='hLine'>
-
-<div id='contact'>
-<ul class="contactList">
-<li><h2 class="jtkHeader">Contact</h2>
-<p class="jtkText">GEOMAR<br/>
-Dusternbrooker Weg 20<br/>
-241 05 Kiel<br/>
-Germany<br/>
-<a href="https://www.geomar.de/index.php?id=jkjellsson" target="_blank">GEOMAR website</a>
-</p>
-
-<p class="jtkText">E-mail: jkjellsson-at-geomar.de</p>
-
-<p class="sideBar"><a href="https://www.google.co.uk/maps/place/GEOMAR+Helmholtz+Centre+for+Ocean+Research+Kiel/@54.3286153,10.1479136,14z/data=!4m8!1m2!2m1!1sgeomar+westufer!3m4!1s0x0:0x807c600d2ca905f1!8m2!3d54.3300325!4d10.1482022?dcr=0" target="_blank">
-Map</a></p>
-
-</li>
-</ul>
-</div>
-
-<HR class='hLine'>
-
-<h2 class="jtkHeader">Projects I'm involved in</h2>
-<ul class="jtkList">
-<li class="jtkList">
-FOCI climate model (OpenIFS/HTESSEL + NEMO/LIM)
-</li>
-<li class="jtkList">
-<a href="http://www.tracmass.org" target="_blank"> 
-TRACMASS Lagrangian trajectory code
-</a>
-</li>
-<li class="jtkList">
-<a href="https://www.bas.ac.uk/project/increasing-antarctic-sea-ice/" target="_blank">
-Increasing Antarctic sea ice (as PDRA)
-</a>
-</li>
-<li class="jtkList">
-<a href="http://www.nemo-ocean.eu" target="_blank">NEMO</a>
-</li>
-</ul>
-
-<HR class='hLine'>
-
 
 <!--
-<p>
-I will be taking up position as sea-ice modeller at British Antarctic Survey, 
-Cambridge, UK in April 2014. 
-</p>
+|------------------------------------------|
+|          Header & tagline                |
+| |--------------------------------------| |
+| |            Header                    | |
+| |--------------------------------------| |
+| |--------------------------------------| |
+| |           Tag line                   | |
+| |--------------------------------------| |
+| |       Top content separator line 1   | |
+| |       Top content separtor           | |
+| |       Top content separator line 2   | |
+|------------------------------------------|
+|             Content                      |
+| |--------------------------------------|-|
+| |                         s s s        | |
+| |                         i i i        | |
+| |        Main content     d d d Sidebar| |
+| |                         e e e        | |
+| |                         S S S        | |
+| |                         e e e        | |
+| |                         p p p        | |
+| |                         a a a        | |
+| |                         t r r        | |
+| |                         a a a        | |
+| |                         t t t        | |
+| |                         o o o        | |
+| |                         r r r        | |
+| |                         L   L        | |
+| |                         i   i        | |
+| |                         n   n        | |
+| |                         e   e        | |
+| |                         1   2        | |
+| |--------------------------------------|-|  
+|                                          |
+|------------------------------------------|
+|            Footer                        |
+|------------------------------------------|
 -->
+
+<!--
+Load research.html into mainContent upon opening the page
+-->
+<script>
+$(document).ready( function() {
+        $("#mainContent").load("research.html");
+});
+</script>
+
+<!--
+Load research.html into mainContent when link is clicked
+-->
+<script>
+$(document).ready( function() {
+    $("#load_research").on("click", function() {
+        $("#mainContent").load("research.html");
+    });
+});
+</script>
+
+<!--
+Load pubs.html into mainContent when link is clicked
+-->
+<script>
+$(document).ready( function() {
+    $("#load_pubs").on("click", function() {
+        $("#mainContent").load("pubs.html");
+    });
+});
+</script>
+
+<!--
+Load animations.html into mainContent when link is clicked
+-->
+<script>
+$(document).ready( function() {
+    $("#load_animations").on("click", function() {
+        $("#mainContent").load("animations.html");
+    });
+});
+</script>
+
+<!--
+Load scripts.html into mainContent when link is clicked
+-->
+<script>
+$(document).ready( function() {
+    $("#load_scripts").on("click", function() {
+        $("#mainContent").load("scripts.html");
+    });
+});
+</script>
+
+<!--
+Load contact.html into mainContent when link is clicked
+-->
+<script>
+$(document).ready( function() {
+    $("#load_contact").on("click", function() {
+        $("#mainContent").load("contact.html");
+    });
+});
+</script>
+
+<div id="headerAndTagLine">
+   <div id="header">
+      <p class="jtkName">dr. Joakim Kjellsson</p>
+   </div>
+   <div id="tagLine">
+      <p class="jtkTagLine">Climate Scientist</p>
+   </div>
+</div>
+<div id="topContentSeparatorLine1">
+</div>
+<div id="topContentSeparator">
+</div>
+<div id="topContentSeparatorLine2">
+</div>
+<div id="content">
+   <div id="mainContent">
+   </div>
+   <div id="sideSeparatorLine1">
+   </div>
+   <div id="sideSeparator">
+   </div>
+   <div id="sideSeparatorLine2">
+   </div>
+   <div id="sideBar">
+      <ul class="jtkSideBar">
+         <li class="jtkSideBar">
+            <img class="jtkPicture" src="images/joakim_kjellsson2_lr.jpg">
+         </li>
+         <li class="jtkSideBar">
+            <a href="mailto:jkjellsson@geomar.de" target="_blank"><img src="images/email.png" class="jtkSocialLink"></a>
+            <a href="http://www.twitter.com/joakimkjellsson" target="_blank"><img src="images/twitter.png" class="jtkSocialLink"></a>
+            <a href="https://www.youtube.com/channel/UCSA9taku0K6IBjhX7iABblQ" target="_blank"><img src="images/youtube.png" class="jtkSocialLink"></a>
+            <a href="http://www.researchgate.net/profile/Joakim_Kjellsson/" target="_blank"><img src="images/researchgate.png" class="jtkSocialLink"></a>
+         </li>
+         <li class="jtkSideNav">
+            <a class="jtkSideNav" href ="#" id="load_research">Research</a>
+         </li>
+         <li class="jtkSideNav">
+            <a class="jtkSideNav" href ="#" id="load_pubs">Publications</a>
+         </li>
+         <li class="jtkSideNav">
+            <a class="jtkSideNav" href ="#" id="load_animations">Animations</a>
+         </li>
+         <li class="jtkSideNav">
+            <a class="jtkSideNav" href ="#" id="load_scripts">Scripts</a>
+         </li>
+         <li class="jtkSideNav">
+            <a class="jtkSideNav" href ="#" id="load_contact">Contact</a>
+         </li>
+         <li class="jtkSideBar">
+            <HR class='jtkSideBar'>
+            <h2 class="jtkAbout">About</h2>
+            <p class="jtkAbout">Joakim Kjellsson<br/>
+            Post doc<br/>
+            GEOMAR Helmholtz Zentrum für Ozeanforschung Kiel<br/>
+            Kiel, Germany<br/>
+            <HR class='jtkSideBar'>
+            <a class="jtkSideBar" href="stuff/kjellsson-cv.pdf" target="_blank">Curriculum Vitae (pdf)</a></br>
+            <a class="jtkSideBar" href="https://scholar.google.com/citations?user=EBaaRc4AAAAJ&hl=en" target="_blank">Google Scholar</a></br>
+            <a class="jtkSideBar" href="https://orcid.org/0000-0002-6405-5276" target="_blank">ORCID</a>
+            </p>
+         </li>
+      </ul>
+   </div>
+</div>
+<div id="footer">
+   <p class="jtkFooter">
+   Background image: <a class="jtkFooter" href="https://en.wikipedia.org/wiki/Stratocumulus_cloud#/media/File:ISS034E016601_-_Stratocumulus_Clouds_-_Pacific_Ocean.jpg">Stratocumulus clouds over the Pacific, viewed from the ISS</a>
+   </p>
+</div>
 
 </body>
 </html>
-
