@@ -66,3 +66,26 @@ h2.text {
 table.text {
   border-spacing: 5px;
 }
+
+img.projectLogo {
+    display: flex;
+    width: auto;
+	height: 80px;
+    justify-content: left;
+    margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.paperAuthor {
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.0;
+}
+
+p.paperTitle {
+    color: black;
+    font-size: 1.2em;
+    font-style: italic;
+}

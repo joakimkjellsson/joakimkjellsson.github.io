@@ -1,186 +1,457 @@
 <!DOCTYPE html>
+<!--
+I wrote this website because it's fun to code and because I wanted my own site with minimalist ideals
+-->
+
 <html>
-<head>
-   <title>Joakim Kjellsson - Climate scientist</title>
-   <link rel="stylesheet" href="style-fabulous.css" />
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
-   </script>
-</head>
+    
+    <head>
+        
+        <title>Joakim Kjellsson - Researcher & Scientific programmer</title>
+        <!-- my very basic stylesheet -->
+        <link rel="stylesheet" href="style-basic.css" />
+        
+    </head>
+    
+    <body>
+        
+        <!-- this div is supposed to sit a bit away from the top and left --> 
+        <div id="content">
 
-<!--
-|------------------------------------------|
-|          Header & tagline                |
-| |--------------------------------------| |
-| |            Header                    | |
-| |--------------------------------------| |
-| |--------------------------------------| |
-| |           Tag line                   | |
-| |--------------------------------------| |
-| |       Top content separator line 1   | |
-| |       Top content separtor           | |
-| |       Top content separator line 2   | |
-|------------------------------------------|
-|             Content                      |
-| |--------------------------------------|-|
-| |                         s s s        | |
-| |                         i i i        | |
-| |        Main content     d d d Sidebar| |
-| |                         e e e        | |
-| |                         S S S        | |
-| |                         e e e        | |
-| |                         p p p        | |
-| |                         a a a        | |
-| |                         t r r        | |
-| |                         a a a        | |
-| |                         t t t        | |
-| |                         o o o        | |
-| |                         r r r        | |
-| |                         L   L        | |
-| |                         i   i        | |
-| |                         n   n        | |
-| |                         e   e        | |
-| |                         1   2        | |
-| |--------------------------------------|-|  
-|                                          |
-|------------------------------------------|
-|            Footer                        |
-|------------------------------------------|
--->
+            <h1 class="title">Joakim Kjellsson</h1>
+            
+            <h2 class="title">Researcher and scientific programmer</h2>
+            
+            <!--
+            <ul class="menu">
+                
+                <li class="menu">
+                
+                    <a href="" class="menu">Publications</a>
+                
+                </li>
+                
+                <li class="menu">    
+                
+                    <a href="#students" class="menu">Students</a>
+                
+                </li>
+                
+                <li class="menu"> 
+                   
+                    <a href="#projects" class="menu">Projects</a>
+                
+                </li>  
+                  
+                <li class="menu">
+                    
+                    <a href="#about" class="menu">About</a>
+                    
+                </li>
+                    
+            </ul>
+            -->
+            
+            <table class="menu">
+            
+                <tr>
+                
+                    <td class="menu"><a href="files/publications.pdf" class="menu">Publications</a></td>
+                    
+                    <td class="menu"><a href="#students" class="menu">Students</a></td>
+                    
+                    <td class="menu"><a href="#projects" class="menu">Projects</a></td>
+                    
+                    <td class="menu"><a href="#about" class="menu">About</a></td>
+                
+                </tr>
+            
+            </table>
+            
+            <h1 class="text" name="about">About</h1>
+            
+            <h2 class="text">History</h2>
+            
+            <table class="text">
+            
+                <tr>
+                
+                    <td>2009-2014</td>
+                    <td>PhD student</td>
+                    <td>Stockholm University, Sweden</td>
+                
+                </tr>
+                
+                <tr> 
+                   
+                    <td>2014-2016</td>
+                    <td>Postdoc
+                    <td>British Antarctic Survey, UK</td>
+                
+                </tr>
+                
+                <tr>
+                    
+                    <td>2016-2017</td>
+                    <td>Postdoc</td>
+                    <td>University of Oxford, UK</td>
+                
+                </tr>
+                
+                <tr>
+                    
+                    <td>2017-2019</td>
+                    <td>Postdoc</td>
+                    <td>GEOMAR, Germany</td>
+                    
+                </tr>
+                
+                <tr>
+                    
+                    <td>2019-2024</td>
+                    <td>Jr. Professor for Meteorology</td>
+                    <td>GEOMAR & Kiel University, Germany</td>
+                    
+                </tr>
+                
+                <tr>
+                    
+                    <td>2024-</td>
+                    <td>Researcher & Scientific programmer</td>
+                    <td>SMHI, Sweden</td>
+                    
+                </tr>
+                
+            </table>
+            
+            <!-- link from menu directs here -->
+            <div id="projects"></div>
 
-<!--
-Load research.html into mainContent upon opening the page
--->
-<script>
-$(document).ready( function() {
-        $("#mainContent").load("research.html");
-});
-</script>
+            <h1 class="text">Projects</h1>
 
-<!--
-Load research.html into mainContent when link is clicked
--->
-<script>
-$(document).ready( function() {
-    $("#load_research").on("click", function() {
-        $("#mainContent").load("research.html");
-    });
-});
-</script>
+            <h2 class="text">ESiWACE</h2>
+            
+            <a class="text" href="https://www.esiwace.eu/" target="_blank"> 
+            <img class="projectLogo" src="images/logo_esiwace400_v2.png">
+            </a> 
 
-<!--
-Load pubs.html into mainContent when link is clicked
--->
-<script>
-$(document).ready( function() {
-    $("#load_pubs").on("click", function() {
-        $("#mainContent").load("pubs.html");
-    });
-});
-</script>
-
-<!--
-Load animations.html into mainContent when link is clicked
--->
-<script>
-$(document).ready( function() {
-    $("#load_animations").on("click", function() {
-        $("#mainContent").load("animations.html");
-    });
-});
-</script>
-
-<!--
-Load scripts.html into mainContent when link is clicked
--->
-<script>
-$(document).ready( function() {
-    $("#load_scripts").on("click", function() {
-        $("#mainContent").load("scripts.html");
-    });
-});
-</script>
-
-<!--
-Load contact.html into mainContent when link is clicked
--->
-<script>
-$(document).ready( function() {
-    $("#load_contact").on("click", function() {
-        $("#mainContent").load("contact.html");
-    });
-});
-</script>
-
-<div id="headerAndTagLine">
-   <div id="header">
-      <p class="jtkName">dr. Joakim Kjellsson</p>
-   </div>
-   <div id="tagLine">
-      <p class="jtkTagLine">Climate Scientist</p>
-   </div>
-</div>
-<div id="topContentSeparatorLine1">
-</div>
-<div id="topContentSeparator">
-</div>
-<div id="topContentSeparatorLine2">
-</div>
-<div id="content">
-   <div id="mainContent">
-   </div>
-   <div id="sideSeparatorLine1">
-   </div>
-   <div id="sideSeparator">
-   </div>
-   <div id="sideSeparatorLine2">
-   </div>
-   <div id="sideBar">
-      <ul class="jtkSideBar">
-         <li class="jtkSideBar">
-            <img class="jtkPicture" src="images/joakim_kjellsson2_lr.jpg">
-         </li>
-         <li class="jtkSideBar">
-            <a href="mailto:jkjellsson@geomar.de" target="_blank"><img src="images/email.png" class="jtkSocialLink"></a>
-            <a href="http://www.twitter.com/joakimkjellsson" target="_blank"><img src="images/twitter.png" class="jtkSocialLink"></a>
-            <a href="https://www.youtube.com/channel/UCSA9taku0K6IBjhX7iABblQ" target="_blank"><img src="images/youtube.png" class="jtkSocialLink"></a>
-            <a href="http://www.researchgate.net/profile/Joakim_Kjellsson/" target="_blank"><img src="images/researchgate.png" class="jtkSocialLink"></a>
-         </li>
-         <li class="jtkSideNav">
-            <a class="jtkSideNav" href ="#" id="load_research">Research</a>
-         </li>
-         <li class="jtkSideNav">
-            <a class="jtkSideNav" href ="#" id="load_pubs">Publications</a>
-         </li>
-         <li class="jtkSideNav">
-            <a class="jtkSideNav" href ="#" id="load_animations">Animations</a>
-         </li>
-         <li class="jtkSideNav">
-            <a class="jtkSideNav" href ="#" id="load_scripts">Scripts</a>
-         </li>
-         <li class="jtkSideNav">
-            <a class="jtkSideNav" href ="#" id="load_contact">Contact</a>
-         </li>
-         <li class="jtkSideBar">
-            <HR class='jtkSideBar'>
-            <h2 class="jtkAbout">About</h2>
-            <p class="jtkAbout">Joakim Kjellsson<br/>
-            Post doc<br/>
-            GEOMAR Helmholtz Zentrum für Ozeanforschung Kiel<br/>
-            Kiel, Germany<br/>
-            <HR class='jtkSideBar'>
-            <a class="jtkSideBar" href="stuff/kjellsson-cv.pdf" target="_blank">Curriculum Vitae (pdf)</a></br>
-            <a class="jtkSideBar" href="https://scholar.google.com/citations?user=EBaaRc4AAAAJ&hl=en" target="_blank">Google Scholar</a></br>
-            <a class="jtkSideBar" href="https://orcid.org/0000-0002-6405-5276" target="_blank">ORCID</a>
+            <p class="text"> 
+               Towards exascale weather and climate simulations. 
+               My role is in the transfer and establishment of knowledge for efficient and scalable climate simulations across Europe. 
+               Built a containerised version of the EC-Earth4 model which can be built on one computing system and easily ported to multiple high-performance computers across Europe - notable EuroHPCs such as MareNostrum5 and LUMI. 
+               </br>
+               The project is part of the EU Joint Undertaking (EuroHPC JU) aiming to develop a world-class supercomputing ecosystem in Europe. 
+               </br>
+               <a class="text" href="https://www.esiwace.eu/" target="_blank">Link to project website</a>
             </p>
-         </li>
-      </ul>
-   </div>
-</div>
-<div id="footer">
-   <p class="jtkFooter">
-   Background image: <a class="jtkFooter" href="https://en.wikipedia.org/wiki/Stratocumulus_cloud#/media/File:ISS034E016601_-_Stratocumulus_Clouds_-_Pacific_Ocean.jpg">Stratocumulus clouds over the Pacific, viewed from the ISS</a>
-   </p>
-</div>
+            
+            <h2 class="text">OptimESM</h2>
+            
+            <a class="text" href="https://optimesm-he.eu/" target="_blank"> 
+            <img class="projectLogo" src="images/SKISS-v2-Logo-OPTIMESM.png">
+            </a>
+            
+            <p class="text">            
+               Developing the next generation of Earth System Models - with more process realism and higher resolution. 
+               My role is in the development of a new version of the EC-Earth model and explore hybrid-resolution approaches to increase model resolution and computer efficiency. 
+               Work includes upgrading the atmosphere component in EC-Earth with more realistic processes and to explore the use of a dual-grid configuration for atmosphere/chemistry simulations. 
+               </br>
+               <a class="text" href="https://optimesm-he.eu/" target="_blank">Link to project website</a>
+            </p>
+            
+            <h2 class="text">SO-CHIC</h2>
+            
+            <a class="text" href="https://www.sochic-h2020.eu/" target="_blank"> 
+            <img class="projectLogo" src="images/sochic_logo_white.png">
+            </a>
 
-</body>
+            <p class="text">            
+               Understand and quantify variability of heat and carbon budgets in the Southern Ocean. 
+               Investigate key processes controlling exchanges between the atmosphere, ocean and sea ice from observations and climate models.
+               My role was to study the climate effect of polynyas in the Weddell Sea, using idealised simulations with an atmosphere model and with a fully coupled climate model with refined resolution in the Weddell Sea. 
+               </br>
+               <a class="text" href="https://www.sochic-h2020.eu/" target="_blank">Link to project website</a>
+            </p>
+            
+            <h2 class="text">ROADMAP</h2>
+            
+            <a class="text" href="http://roadmap.rd.ciencias.ulisboa.pt/" target="_blank"> 
+            <img class="projectLogo" src="images/Logo_01_JPI_Ocean.png">
+            </a>
+
+            <p class="text">            
+               The role of ocean dynamics and ocean-atmosphere interactions in driving climate variations. 
+               My role was to study how ocean variability can shape atmospheric extreme events over Europe, for example how the North Atlantic Ocean shapes European summer heat waves. 
+               </br> 
+               <a class="text" href="http://roadmap.rd.ciencias.ulisboa.pt/">Link to project website</a>
+            </p>
+            
+            <h2 class="text">BalticWay</h2>
+            
+            <a class="text" href="https://wavelab.taltech.ee/wp-content/uploads/media/docs/AnnualReport_Year1_BalticWay.pdf" target="_blank"> 
+            <img class="projectLogo" src="images/balticway.png">
+            </a>
+
+            <p class="text">
+                The potential of currents for environmental management of the Baltic Sea maritime industry. 
+                My role was to study the spreading rates of particles in the Baltic Sea using a combination of turbulence theory, observed surface drifters, and particle-tracking models. 
+                </br>
+                <a class="text" href="https://wavelab.taltech.ee/wp-content/uploads/media/docs/AnnualReport_Year1_BalticWay.pdf">Link to project report</a>
+            </p>
+            
+            <!-- link from menu directs here -->
+            <div id="students"></div>
+
+            <h1 class="text" name="students">Students</h1>
+            
+            <h2 class="text">Postdocs</h2>
+            
+            <ul class="students">
+            
+                <li class="students">
+                    
+                    <p class="students">Abhishek Savita, 2021 - 2024, Oceanic influence on atmospheric circulation</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Malin Ödalen, 2023 - 2024, Southern Ocean heat and carbon uptake</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">    
+Sayantani Ojha, 2022 - 2025, Impact of Greenland melting on atmospheric extremes</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">
+Julian Krüger, 2024 - 2024, Representation of European heat waves in climate models</p>
+                
+                </li>
+            
+            </ul>
+            
+            <h2 class="text">PhD students</h2>
+            
+            <ul class="students">
+            
+                <li class="students">
+                    
+                    <p class="students">Julian Krüger, 2020 - 2023, On the Role of North Atlantic Sea Surface Temperatures for European Heat Events. Successful defence: December 2023</p>
+                </li> 
+                
+                <li class="students">
+                    
+                    <p class="students">Sedat Gözlet, 2021 - 2025, Atmospheric Extreme Events in Future Climates. Planned defence: early 2025. </p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Médéric StPierre, 2021 - 2024, Climate-projection uncertainties in grand model ensemble [co-supervisor]. Successful defence: October 2024. </p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Yingxue Liu, 2022 - (2026), Extreme weather events in present and future climates. </p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Qi Zhang, 2022 - (2026), Analyzing extreme temperature under global warming: Trends, Models, and Mechanisms</p>
+                
+                </li>
+            
+            </ul>
+            
+            <h2 class="text">Master theses</h2>
+            
+            <ul class="students">
+            
+                <li class="students">
+                    
+                    <p class="students">Tim Sieker, 2024, <a class="students" href="https://oceanrep.geomar.de/id/eprint/61177">Evaluating the mean climate in eddy-parameterized and eddy-rich versions of the FOCI-OpenIFS coupled climate model</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Nils Niebaum, 2024, <a class="students" href="https://oceanrep.geomar.de/id/eprint/60853">Constraining Rain Evaporation during the EUREC4A Campaign with the Super-Droplet Model CLEO</a>, [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Catharina Ziska, 2024, TBD [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Tabea Rahm, 2023, <a class="students" href="https://oceanrep.geomar.de/id/eprint/58633">How will the dominant weather regimes change under the influence of climate warming?</a></p> 
+                    
+                </li>
+                    
+                <li class="students">
+                    
+                    <p class="students">Lukas Schreiber, 2023, <a class="students" href="https://oceanrep.geomar.de/id/eprint/58629">What Drives the Salinity in the Global Ocean under Changing Climate Forcing?</a>, [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Sebastian Bubmann, 2023, Is statistical downscaling of seasonal precipitation forecasts worth the effort?</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Nicolas Dettling, 2021, <a class="students" href="https://oceanrep.geomar.de/id/eprint/54674">Response of atmospheric heat and moisture transports to anthropogenic climate forcing</a></p> 
+                
+                </li>    
+            
+            </ul>
+                    
+            <h2 class="text">Bachelor theses</h2>
+            
+            <ul class="students">
+            
+                <li class="students">
+                    
+                    <p class="students">Annabelle d’Heureuse, Southern Hemispheric Sudden Stratospheric Warmings in an Ensemble of the FOCI Coupled Climate Model [co-supervisor]</p>
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Edgar Borkowski, 2024, Atmosphere-model-driven uncertainty in North Atlantic climate response to CO2 forcing [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Sarah Thomae, 2024, <a class="students" href="https://oceanrep.geomar.de/id/eprint/60442/">Local weather variability in Longyearbyen and surroundings, Svalbard</a>, [co-supervisor]</p>
+                    
+                </li>
+
+                <li class="students">
+                    
+                    <p class="students">Finn Könecke, 2024, <a class="students" href="https://oceanrep.geomar.de/id/eprint/60220">What is the fingerprint of AMOC variability and its trends?</a></p>
+                
+                </li> 
+                
+                <li class="students">
+                    
+                    <p class="students">Stefanie Brechtelsbauer, 2023, Extreme Greenland Ice Sheet melt events in a warmer world: A storyline approach, [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Katharina Schmitt, 2023, <a class="students" href="https://oceanrep.geomar.de/id/eprint/58491">Convective and Gravity Wave Momentum Transport during EUREC4A</a>, [co-supervisor] </p>
+                    
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Thies Johnsen, 2023, <a class="students" href="https://oceanrep.geomar.de/id/eprint/59267">Impact of Ocean Model Resolution on the Representation of North Atlantic and European Blocking in the FOCI-OpenIFS Model</a>, [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Lasse Kummer, 2023, <a class="students" href="https://oceanrep.geomar.de/id/eprint/58944">Representation of double-gyre circulations in ocean models of varying horizontal resolutions</a>, Winner of Otto Krümmel award for best B.Sc. thesis.</p>
+                
+                </li> 
+                
+                <li class="students">
+                    
+                    <p class="students">Paula Damke, 2022, <a class="students" href="https://oceanrep.geomar.de/id/eprint/57354">Effect of Seasonal Sea Ice on Southern Ocean Mesoscale Eddy Activity in a Climate Model</a>, [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Julia Noack, 2022, <a class="students" href="https://oceanrep.geomar.de/id/eprint/56735">How do mesoscale ocean dynamics affect Antarctic Circumpolar Current strength in climate models?</a>, [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Nana Hocke, 2022, <a class="students" href="https://oceanrep.geomar.de/id/eprint/57353">Representation of jet stream trends in atmospheric models</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Leah Kanzler, 2022, <a class="students" href="https://oceanrep.geomar.de/id/eprint/56734">How do atmosphere models reproduce observed extreme precipitation events?</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Daniel Kaufmann, 2022, <a class="students" href="https://oceanrep.geomar.de/id/eprint/57352">Veränderung des Schneefalls über Europa in Klimamodellsimulationen</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Sebastian Bubmann, 2021, <a class="students" href="https://oceanrep.geomar.de/id/eprint/52046">Rainfall patterns in Port Moresby, Papua New Guinea</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Alexander Schmitz, 2021, Veränderung der Niederschlagsverteilung über Europa in CMIP6 Modellen [co-supervisor]</p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Corinna Buder, 2020, <a class="students" href="https://oceanrep.geomar.de/id/eprint/51118">Impact of a Northern European Enclosure Dam on North Atlantic Climate</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Johanna Knauf, 2020, <a class="student" href="https://oceanrep.geomar.de/id/eprint/51117">Impact of ocean resolution on storms in the North Atlantic region</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Nils Niebaum, 2020, <a class="students" href="https://oceanrep.geomar.de/id/eprint/51346">Trends in heat Stress over Europe</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Lisa Kaspar, 2020, <a class="students" href="https://oceanrep.geomar.de/id/eprint/54682">Einfluss von ENSO auf die Variabilität im Südlichen Ozean [co-supervisor]</a></p>
+                
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Jakob Deutloff, 2020, <a class="students" href="https://oceanrep.geomar.de/id/eprint/51119">Drivers of Climate-Model Biases in Antarctic Circumpolar Current Strength</a></p>
+               
+                </li>
+                
+                <li class="students">
+                    
+                    <p class="students">Berenike Rappat, 2019, Klimatvariabilität im Südlichen Ozean aus Beobachtungen</p>
+                
+                </li>
+            
+            </ul>
+
+        </div>
+
+    </body>
+
 </html>
